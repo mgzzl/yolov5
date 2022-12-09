@@ -331,7 +331,7 @@ YOLOv5[发布 v6.2](https://github.com/ultralytics/yolov5/releases)带来对分�
 
 我们使用 4xA100 实例在 ImageNet 上训练了 90 个时期的 YOLOv5-cls 分类模型，我们训练了 ResNet 和 EfficientNet 模型以及相同的默认训练设置以进行比较。我们将所有模型导出到 ONNX FP32 以进行 CPU 速度测试，并导出到 TensorRT FP16 以进行 GPU 速度测试。我们在 Google 上进行了所有速度测试[协作临](https://colab.research.google.com/signup)为了便于重现。
 
-| 模型                                                                                          | 尺寸<br><sup>（像素） | acc<br><sup>top1 | acc<br><sup>烹饪 | 训练<br><sup>90个纪元<br>4xA100（小时） | 速度<br><sup>ONNX 中央处理器<br>（小姐） | 速度<br><sup>TensorRT V100<br>（小姐） | 参数<br><sup>(男) | 失败者<br><sup>@224（乙） |
+| 模型                                                                                          | 尺寸<br><sup>（像素） | acc<br><sup>top1 | acc<br><sup>烹饪 | 训练<br><sup>90个纪元<br>4xA100（小时） | 速度<br><sup>ONNX 中央处理器<br>（小姐） | 速度<br><sup>TensorRT V100<br>（小姐） | 参数<br><sup>(男) | 失败者<br><sup>@224（二） |
 | ------------------------------------------------------------------------------------------- | --------------- | ---------------- | -------------- | ------------------------------ | ----------------------------- | -------------------------------- | -------------- | ------------------- |
 | [YOLOv5n-cls](https://github.com/ultralytics/yolov5/releases/download/v6.2/yolov5n-cls.pt)  | 224             | 64.6             | 85.4           | 7:59                           | **3.3**                       | **0.5**                          | **2.5**        | **0.5**             |
 | [YOLOv5s-cls](https://github.com/ultralytics/yolov5/releases/download/v6.2/yolov5s-cls.pt)  | 224             | 71.5             | 90.2           | 8:09                           | 6.6                           | 0.6                              | 5.4            | 1.4                 |
